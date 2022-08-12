@@ -1,5 +1,9 @@
 # Julia Sets using OpenGL
 
+# Requirements
+
+- glfw
+
 # Why OpenGL
 
 Opengl is a cross platform standard. Using opengl allows for a fairly low level implementation of a graphical application. We don't need any fancy sound, ui or things like this. We just need to draw our art!
