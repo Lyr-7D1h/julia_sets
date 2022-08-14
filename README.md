@@ -14,5 +14,11 @@ GLFW is sort of a subset of SDL2. GLFW just handles window creation and keyboard
 
 That's why I decided on using GLFW as we only need minimal functionality.
 
+# Considerations 
+
+- Render using the more modern Vulkan API.
+- Use wgpu with winit
+
+
 # Resources
 https://rust-tutorials.github.io/learn-opengl/basics/000-creating-a-window.html
