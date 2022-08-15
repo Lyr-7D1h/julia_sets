@@ -6,9 +6,8 @@ use gl33::{
         glGetProgramiv, glGetShaderInfoLog, glGetShaderiv, glLinkProgram, glShaderSource,
         glUseProgram, glVertexAttribPointer, load_global_gl,
     },
-    GL_ARRAY_BUFFER, GL_COLOR_BUFFER_BIT, GL_COMPILE_STATUS, GL_FALSE, GL_FLOAT,
-    GL_FRAGMENT_SHADER, GL_INFO_LOG_LENGTH, GL_LINK_STATUS, GL_STATIC_DRAW, GL_TRIANGLES,
-    GL_VERTEX_SHADER,
+    GL_ARRAY_BUFFER, GL_COLOR_BUFFER_BIT, GL_COMPILE_STATUS, GL_FLOAT, GL_FRAGMENT_SHADER,
+    GL_LINK_STATUS, GL_STATIC_DRAW, GL_TRIANGLES, GL_VERTEX_SHADER,
 };
 use glutin::{
     self,
