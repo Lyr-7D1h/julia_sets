@@ -1,14 +1,11 @@
 use winit::{
     event::*,
     event_loop::{ControlFlow, EventLoop},
-    window::WindowBuilder,
+    window::{Window, WindowBuilder},
 };
 
-pub fn run() {
-    let event_loop = EventLoop::new();
-    let window = WindowBuilder::new().build(&event_loop).unwrap();
-
-    event_loop.run(move |event, _, control_flow| match event {
+fn event_actions(window: &Window, event: Event<()>, control_flow: &mut ControlFlow) {
+    match event {
         Event::WindowEvent {
             ref event,
             window_id,
@@ -26,6 +23,17 @@ pub fn run() {
             _ => {}
         },
         _ => {}
-    });
+    }
 }
 
+fn draw() {}
+
+pub fn run() {
+    let event_loop = EventLoop::new();
+    let window = WindowBuilder::new().build(&event_loop).unwrap();
+
+    event_loop.run(move |event, _, control_flow| {
+        draw();
+        event_actions(&window, event, control_flow);
+    });
+}
