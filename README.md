@@ -23,3 +23,4 @@ That's why I decided on using GLFW as we only need minimal functionality.
 # Resources
 https://rust-tutorials.github.io/learn-opengl
 https://sotrh.github.io/learn-wgpu/
+https://gpuweb.github.io/gpuweb/#intro

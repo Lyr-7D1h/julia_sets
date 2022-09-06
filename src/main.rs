@@ -1,5 +1,5 @@
 use julia_sets::run;
 
 pub fn main() {
-    run();
+    pollster::block_on(run())
 }
