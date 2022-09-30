@@ -75,6 +75,7 @@ impl State {
     }
 
     // https://sotrh.github.io/learn-wgpu/beginner/tutorial2-surface/#challenge
+    /// Returns a boolean weather or not it should process the WindowEvent
     pub fn input(&mut self, event: &WindowEvent) -> bool {
         return false;
     }

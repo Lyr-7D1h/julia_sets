@@ -1,6 +1,7 @@
 use winit::{
     event::*,
     event_loop::{ControlFlow, EventLoop},
+    platform::unix::WindowBuilderExtUnix,
     window::{Window, WindowBuilder},
 };
 
@@ -64,6 +65,7 @@ pub async fn run() {
     let event_loop = EventLoop::new();
     let window = WindowBuilder::new()
         .with_title("Julia Sets")
+        .with_name("julia_sets", "julia_sets")
         .build(&event_loop)
         .unwrap();
 

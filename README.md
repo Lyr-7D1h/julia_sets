@@ -1,23 +1,23 @@
-# Julia Sets using OpenGL
+# Julia Sets using Web GPU Specifications
 
 # Requirements
 
-- glfw
+- A driver supporting on of these graphics api's: Vulkan, Metal, D3D12, D3D11, and OpenGLES
 
-# Why OpenGL
+# Why WGPU
 
-Opengl is a cross platform standard. Using opengl allows for a fairly low level implementation of a graphical application. We don't need any fancy sound, ui or things like this. We just need to draw our art!
+I wanted to write in Rust and wgpu uses pure Rust, not some weird shotty c wrapper around opengl or similar. 
 
-# GLFW vs SDL2 
+WGPU implements the Web GPU standard which is supported by a large amount of modern graphics Api's like Vulkan.
+
+
+## OpenGL (OLD)
+
+Opengl is a cross platform standard. Using opengl allows for a fairly low level implementation of a graphical application. Opengl has been around for a long time and good support on a lot of devices.
+
+## GLFW vs SDL2
 
 GLFW is sort of a subset of SDL2. GLFW just handles window creation and keyboard/mouse IO, whereas SDL2 does all these things but also has support for sound and a bunch of abstracted tools for drawing shapes and lines.
-
-That's why I decided on using GLFW as we only need minimal functionality.
-
-# Considerations 
-
-- Render using the more modern Vulkan API.
-- Use wgpu with winit
 
 
 # Resources
